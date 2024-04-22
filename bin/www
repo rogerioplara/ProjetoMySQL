@@ -86,7 +86,7 @@ function onListening() {
   debug("Listening on " + bind);
 
   sequelize
-    .authenticate()
+    .sync()
     .then(() => {
       console.log("Banco de dados conectado com sucesso.");
     })
